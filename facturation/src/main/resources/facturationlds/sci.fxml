@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane id="sciScrollPane" fx:id="sciScrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1120.0" stylesheets="@css/windows.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="facturationlds.SCIController">
+   <content>
+      <VBox prefWidth="1120.0">
+         <children>
+            <JFXTabPane prefHeight="720.0" prefWidth="1080.0">
+               <tabs>
+                  <Tab text="Créer une nouvelle SCI">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="180.0" prefWidth="1060.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="495.0" minWidth="10.0" prefWidth="180.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="804.0" minWidth="10.0" prefWidth="180.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="804.0" minWidth="10.0" prefWidth="160.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="804.0" minWidth="10.0" prefWidth="20.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="804.0" minWidth="10.0" prefWidth="180.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="804.0" minWidth="10.0" prefWidth="180.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="804.0" minWidth="10.0" prefWidth="160.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="804.0" minWidth="10.0" prefWidth="20.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Raison sociale (*)" GridPane.rowIndex="1" />
+                                          <Label text="SIRET (*)" GridPane.rowIndex="2" />
+                                          <Label text="Numéro et Rue  (*)" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                          <Label text="Complément d'adresse" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                          <Label text="Code Postal  (*)" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                          <Label text="Ville (*) " GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                                          <Label text="e-mail" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                                          <Label text="téléphone" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                                          <Label text="site internet" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                                          <Label text="Moyens de paiement (*)" GridPane.rowIndex="6" />
+                                          <Label text="Iban" GridPane.rowIndex="7" />
+                                          <Label text="Bic" GridPane.rowIndex="8" />
+                                          <Label text="Détenteur du compte" GridPane.rowIndex="9" />
+                                          <Label text="Indications légales" GridPane.rowIndex="11" />
+                                          <Label text="Pénalités de retard" GridPane.rowIndex="12" />
+                                          <Label text="Escompte" GridPane.rowIndex="13" />
+                                          <Label text="Recouvrement" GridPane.rowIndex="14" />
+                                          <Label text="RCS (*)" GridPane.rowIndex="3" />
+                                          <Label text="Capital social" GridPane.rowIndex="4" />
+                                          <JFXTextField id="sciNameTF" fx:id="sciNameTF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                                          <JFXTextField id="siretTF" fx:id="siretTF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+                                          <JFXTextField id="rcsTF" fx:id="rcsTF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                                          <JFXTextField id="socialFundsTF" fx:id="socialFundsTF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+                                          <JFXCheckBox id="wirePayCB" fx:id="wirePayCB" text="Virement" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                          <JFXCheckBox id="checkPayCB" fx:id="checkPayCB" text="Chèque" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                          <JFXTextField id="ibanTF" fx:id="ibanTF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="7" />
+                                          <JFXTextField id="bicTF" fx:id="bicTF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="8" />
+                                          <JFXTextField id="accountOwnerTF" fx:id="accountOwnerTF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="9" />
+                                          <JFXTextField id="streetAndNumberTF" fx:id="streetAndNumberTF" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                                          <JFXTextField id="streetComplementTF" fx:id="streetComplementTF" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+                                          <JFXTextField id="zipCodeTF" fx:id="zipCodeTF" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                                          <JFXTextField id="cityTF" fx:id="cityTF" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+                                          <JFXTextField id="emailTF" fx:id="emailTF" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+                                          <JFXTextField id="phoneTF" fx:id="phoneTF" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+                                          <JFXTextField id="websiteTF" fx:id="websiteTF" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="7" />
+                                          <JFXTextField id="penaltiesTF" fx:id="penaltiesTF" text="Pénalités de retard (taux annuel) : 10,00 %" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="12" />
+                                          <JFXTextField id="escompteTF" fx:id="escompteTF" text="Pas d'escompte en cas de paiement anticipé" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="13" />
+                                          <JFXTextField id="recoveryTF" fx:id="recoveryTF" text="Indemnité forfaitaire pour frais de recouvrement en cas de retard de paiement : 40 €" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="14" />
+                                          <JFXButton id="insertSCIButton" fx:id="insertSCIButton" onAction="#handleInsertSCI" text="Création" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Modifier les informations d'une SCI">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="180.0" prefWidth="1060.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label />
+                                    <JFXComboBox id="sciChoiceComboBox" fx:id="sciChoiceComboBox" onAction="#handleSCISelection" promptText="Sélectionner une SCI">
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                    </JFXComboBox>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="495.0" minWidth="10.0" prefWidth="180.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="804.0" minWidth="10.0" prefWidth="180.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="804.0" minWidth="10.0" prefWidth="160.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="804.0" minWidth="10.0" prefWidth="20.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="804.0" minWidth="10.0" prefWidth="180.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="804.0" minWidth="10.0" prefWidth="180.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="804.0" minWidth="10.0" prefWidth="160.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="804.0" minWidth="10.0" prefWidth="20.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Raison sociale (*)" GridPane.rowIndex="1" />
+                                          <Label text="SIRET (*)" GridPane.rowIndex="2" />
+                                          <Label text="Numéro et Rue  (*)" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                          <Label text="Complément d'adresse" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                          <Label text="Code Postal  (*)" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                          <Label text="Ville (*) " GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                                          <Label text="e-mail" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                                          <Label text="téléphone" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                                          <Label text="site internet" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                                          <Label text="Moyens de paiement (*)" GridPane.rowIndex="6" />
+                                          <Label text="Iban" GridPane.rowIndex="7" />
+                                          <Label text="Bic" GridPane.rowIndex="8" />
+                                          <Label text="Détenteur du compte" GridPane.rowIndex="9" />
+                                          <Label text="Indications légales" GridPane.rowIndex="11" />
+                                          <Label text="Pénalités de retard" GridPane.rowIndex="12" />
+                                          <Label text="Escompte" GridPane.rowIndex="13" />
+                                          <Label text="Recouvrement" GridPane.rowIndex="14" />
+                                          <Label text="RCS (*)" GridPane.rowIndex="3" />
+                                          <Label text="Capital social" GridPane.rowIndex="4" />
+                                          <JFXTextField id="updateSCINameTF" fx:id="updateSCINameTF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                                          <JFXTextField id="updateSiretTF" fx:id="updateSiretTF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+                                          <JFXTextField id="updateRCSTF" fx:id="updateRCSTF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                                          <JFXTextField id="updateSocialFundsTF" fx:id="updateSocialFundsTF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+                                          <JFXCheckBox id="updateWirePayCB" fx:id="updateWirePayCB" text="Virement" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                          <JFXCheckBox id="updateCheckPayCB" fx:id="updateCheckPayCB" text="Chèque" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                          <JFXTextField id="updateIbanTF" fx:id="updateIbanTF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="7" />
+                                          <JFXTextField id="updateBicTF" fx:id="updateBicTF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="8" />
+                                          <JFXTextField id="updateAccountOwnerTF" fx:id="updateAccountOwnerTF" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="9" />
+                                          <JFXTextField id="updateStreetAndNumberTF" fx:id="updateStreetAndNumberTF" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                                          <JFXTextField id="updateStreetComplementTF" fx:id="updateStreetComplementTF" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+                                          <JFXTextField id="updateZipCodeTF" fx:id="updateZipCodeTF" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                                          <JFXTextField id="updateCityTF" fx:id="updateCityTF" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+                                          <JFXTextField id="updateEmailTF" fx:id="updateEmailTF" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+                                          <JFXTextField id="updatePhoneTF" fx:id="updatePhoneTF" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+                                          <JFXTextField id="updateWebsiteTF" fx:id="updateWebsiteTF" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="7" />
+                                          <JFXTextField id="updatePenaltiesTF" fx:id="updatePenaltiesTF" text="Pénalités de retard (taux annuel) : 10,00 %" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="12" />
+                                          <JFXTextField id="updateEscompteTF" fx:id="updateEscompteTF" text="Pas d'escompte en cas de paiement anticipé" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="13" />
+                                          <JFXTextField id="updateRecoveryTF" fx:id="updateRecoveryTF" text="Indemnité forfaitaire pour frais de recouvrement en cas de retard de paiement : 40 €" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="14" />
+                                          <JFXButton id="updateSCIButton" fx:id="updateSCIButton" onAction="#handleUpdateSCI" text="Mettre à jour" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </opaqueInsets>
+      </VBox>
+   </content>
+</ScrollPane>

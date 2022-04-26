@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="globalAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="facturationlds.MainController">
+   <children>
+      <AnchorPane id="mainWindowAnchorPane" fx:id="mainWindowAnchorPane" layoutX="160.0" prefHeight="720.0" prefWidth="1120.0" />
+      <VBox id="sideMenuVBox" prefHeight="720.0" prefWidth="160.0" style="-fx-background-color: rgb(104, 118, 133);" stylesheets="@css/main.css" AnchorPane.bottomAnchor="0.0">
+         <children>
+            <Button id="factureButton" fx:id="factureButton" mnemonicParsing="false" onAction="#factureRedirect" prefHeight="110.0" prefWidth="160.0" text="Factures">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="3.0" right="3.0" top="3.0" />
+               </VBox.margin></Button>
+            <Button id="prestationButton" fx:id="prestationButton" mnemonicParsing="false" onAction="#prestaRedirect" prefHeight="110.0" prefWidth="160.0" text="Prestations">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="2.0" left="3.0" right="3.0" top="3.0" />
+               </VBox.margin></Button>
+            <Button id="clientButton" fx:id="clientButton" mnemonicParsing="false" onAction="#clientsRedirect" prefHeight="110.0" prefWidth="160.0" text="Clients">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="3.0" right="3.0" top="3.0" />
+               </VBox.margin></Button>
+            <Button id="sciButton" fx:id="sciButton" mnemonicParsing="false" onAction="#sciRedirect" prefHeight="110.0" prefWidth="160.0" text="SCI">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="3.0" right="3.0" top="3.0" />
+               </VBox.margin></Button>
+            <Button id="exportButton" fx:id="exportButton" layoutX="10.0" layoutY="394.0" mnemonicParsing="false" onAction="#doExport" prefHeight="110.0" prefWidth="160.0" text="Export">
+               <VBox.margin>
+                  <Insets bottom="35.0" left="3.0" right="3.0" top="3.0" />
+               </VBox.margin></Button>
+            <ImageView fitHeight="70.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/LDS.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin></ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</AnchorPane>

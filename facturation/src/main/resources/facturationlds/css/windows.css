@@ -1,0 +1,71 @@
+* {
+    -jfx-focus-color : rgb(143, 67, 16);
+    -jfx-unfocus-color : rgb(202, 163, 136);
+    -fx-font-family: Verdana;
+    -fx-font-size: 14;
+}
+
+
+.button{
+    -fx-padding: 0.7em 0.57em;
+    -fx-font-size: 14px;
+    -jfx-button-type: RAISED;
+    -fx-background-color:
+    linear-gradient(rgb(214, 135, 60) 0%, rgb(194, 112, 36) 50%, rgb(143, 67, 16) 100%),
+    linear-gradient(from 0% 0% to 15% 50%, #e2c7a48e, rgba(105, 77, 17, 0.096));
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-pref-width: 200;
+    -fx-text-fill: WHITE;
+}
+
+
+.tab {
+    -fx-background-color: 
+    linear-gradient(#caa73d, #b86800),
+    linear-gradient(#e2c72c 0%, #e4b50b 50%, #ca8e16 100%),
+    linear-gradient(from 0% 0% to 15% 50%, #e2c7a4, rgba(105, 77, 17, 0.096));
+    -fx-background-insets: 0,1,2,3,0;
+}
+
+.tab:selected {
+    -fx-background-color: 
+    linear-gradient(#ca883d, #533105),
+    linear-gradient(#e2d798 0%, #beb38a 50%, #af8b44 100%),
+    linear-gradient(from 0% 0% to 15% 50%, #e2c7a4, rgba(105, 77, 17, 0));
+}
+
+.jfx-tab-pane .tab .tab-label {
+    -fx-font-weight: normal;
+}
+
+.tab-selected-line {
+    -fx-background-color: transparent;
+    -fx-scale-x : 100%;
+}
+
+.tab-header-background{
+    -fx-background-color: 
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-insets: 0,1,2,3,0;
+}
+
+.combo-box .list-cell{
+    -fx-background: #9b78162c;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.66667em; 
+}
+
+
+.combo-box-popup .list-view .list-cell:hover{
+    -fx-background-color: #9b78166c;
+}
+
+.jfx-check-box {
+    -jfx-checked-color: rgb(143, 67, 16);
+}
+

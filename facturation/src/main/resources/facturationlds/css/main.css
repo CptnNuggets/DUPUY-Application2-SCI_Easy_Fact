@@ -1,0 +1,27 @@
+
+
+.button {
+    -fx-background-color: 
+    linear-gradient(rgb(77, 116, 165), rgb(33, 66, 105)),
+    linear-gradient(rgb(98, 119, 187) 0%, rgb(53, 90, 136) 50%, rgb(33, 66, 105) 100%),
+    linear-gradient(from 0% 0% to 15% 40%, #e4cfb3b4, rgba(105, 77, 17, 0.096));
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-border-width : 3px;
+    -fx-border-color : 
+    linear-gradient(rgb(77, 116, 165), rgb(33, 66, 105)),
+    linear-gradient(rgb(255, 248, 232) 0%, rgb(236, 227, 206) 50%, rgb(170, 155, 127) 100%),
+    linear-gradient(from 0% 0% to 15% 40%, #f7e4cbb4, rgba(138, 113, 59, 0.096));
+    -fx-background-radius : 7px;
+    -fx-border-radius : 5px;
+    -fx-text-fill : rgb(241, 236, 223);
+    -fx-font : 18 Verdana;
+}
+
+.button.was_selected{
+    -fx-background-color : rgb(139, 152, 168);
+
+    -fx-background-color: 
+    linear-gradient(rgb(77, 116, 165), rgb(33, 66, 105)),
+    linear-gradient(rgb(98, 119, 187) 0%, rgb(53, 90, 136) 50%, rgb(33, 66, 105) 100%),
+    linear-gradient(from 0% 0% to 15% 40%, #e0d6c8b4, rgba(197, 166, 100, 0.329));
+}

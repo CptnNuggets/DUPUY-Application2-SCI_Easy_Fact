@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane id="clientScrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1120.0" stylesheets="@css/windows.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="facturationlds.EditFactureController">
+   <content>
+      <VBox prefHeight="723.0" prefWidth="1100.0">
+         <children>
+            <GridPane prefWidth="1040.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="495.0" minWidth="0.0" prefWidth="249.00001220703126" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="804.0" minWidth="0.0" prefWidth="324.99998779296874" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="953.0000610351562" minWidth="10.0" prefWidth="259.4000244140625" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="804.0" minWidth="10.0" prefWidth="233.79997558593755" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="SCI :" />
+                  <Label text="Client :" GridPane.columnIndex="2" />
+                  <Label text="Ajout d'une prestation par défaut" GridPane.rowIndex="3" />
+                  <Label text="Prestation générale :" GridPane.rowIndex="4" />
+                  <Label text="Description :" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Label text="Prix unitaire (HT) :" GridPane.rowIndex="5" />
+                  <Label prefHeight="18.0" prefWidth="167.0" text="Taux de TVA (%) :" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <JFXComboBox id="prestationChoiceComboBox" fx:id="prestationChoiceComboBox" onAction="#handleSelectPrestation" promptText="Sélectionnez une prestation" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <JFXTextField id="descriptionTF" fx:id="descriptionTF" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <JFXTextField id="unitaryPriceTF" fx:id="unitaryPriceTF" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <JFXTextField id="tvaPercentageTF" fx:id="tvaPercentageTF" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <JFXButton id="addPrestationButton" fx:id="addPrestationButton" onAction="#handleAddPrestation" text="Ajouter à la facture" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                  <Label id="sciLabel" fx:id="sciLabel" text="sciLabel" GridPane.columnIndex="1" />
+                  <Label id="clientLabel" fx:id="clientLabel" text="clientLabel" GridPane.columnIndex="3" />
+                  <Label text="Facture n°" GridPane.rowIndex="1" />
+                  <Label id="factureLabel" fx:id="factureLabel" text="factureLabel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <JFXComboBox id="defaultPrestaComboBox" fx:id="defaultPrestaComboBox" onAction="#handleSelectDefaultPrestation" promptText="Sélectionnez une prestation pré-remplie" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <JFXCheckBox id="definitiveCheckBox" fx:id="definitiveCheckBox" onAction="#handleDefinitiveChange" text="Valider défintivement la facture" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label text="Quantité :" GridPane.rowIndex="6" />
+                  <JFXTextField id="quantityTF" fx:id="quantityTF" text="1" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
+            <JFXTreeTableView id="prestationsTreeTableView" fx:id="prestationsTreeTableView" prefHeight="285.0" prefWidth="1060.0" />
+            <Label text="Commentaire :" />
+            <JFXTextArea id="commentTA" fx:id="commentTA" prefHeight="42.0" prefWidth="1060.0" />
+            <Label />
+            <JFXButton id="saveFactureButton" fx:id="saveFactureButton" onAction="#handleSaveFacture" text="Sauvegarder" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </opaqueInsets>
+      </VBox>
+   </content>
+</ScrollPane>
